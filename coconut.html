@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coconut Heritage: Traditions, Uses & Benefits </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6D4C3D;
+            --secondary: #A78A7F;
+            --accent: #D1B280;
+            --light: #F5F0E6;
+            --dark: #3A2E26;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+        
+        header {
+            background: linear-gradient(rgba(61, 39, 21, 0.7), rgba(61, 39, 21, 0.7)), 
+                        url('https://static.vecteezy.com/system/resources/previews/055/070/076/non_2x/fresh-coconuts-split-open-showing-white-coconut-meat-tropical-fruit-free-png.png" alt="Coconut Split Open') center/cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23F5F0E6" opacity=".25"/><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="%23F5F0E6" opacity=".5"/><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23F5F0E6"/></svg>') bottom center/cover;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .info-section {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 3rem;
+            margin-bottom: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .info-card {
+            background-color: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+        }
+        
+        .info-card h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .info-card h3::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+        
+        .uses-list {
+            list-style-type: none;
+        }
+        
+        .uses-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed var(--secondary);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .uses-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .uses-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 250px;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .fact-box {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .fact-box::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff10"><path d="M30,10 Q50,5 70,10 T90,30 Q95,50 90,70 T70,90 Q50,95 30,90 T10,70 Q5,50 10,30 T30,10Z"/></svg>');
+            background-size: contain;
+        }
+        
+        .fact-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .info-section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coconut Heritage: Traditions, Uses & Benefits</h1>
+        <p class="tagline">Where tropical heritage meets modern wellness</p>
+    </header>
+    
+    <div class="container">
+        <section class="info-section">
+            <h2>The Coconut Palm</h2>
+            <p>The coconut tree (Cocos nucifera) is a member of the palm tree family (Arecaceae) and the only living species of the genus Cocos. The term "coconut" can refer to the whole coconut palm, the seed, or the fruit, which is not a true nut.</p>
+            
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/PXL_20210404_052707618.PORTRAIT-01.COVER.jpg?v=1617523416" alt="Coconut on tree">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://2.imimg.com/data2/AY/IO/MY-3142667/3-500x500.jpg" alt="Coconut leaves">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/green-coconut-1296x728-feature.jpg?w=1155&h=1528" alt="Green coconuts">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGnTeRHs3VIEiCffkCMztSjLhZjQEJ0D1rg&s" alt="Coconut harvest">
+                </div>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Local Names</h3>
+                    <ul class="uses-list">
+                        <li>English: Coconut</li>
+                        <li>Hindi: नारियल (nariyal)</li>
+                        <li>Marathi: नारळ (naral)</li>
+                        <li>Kannada: ತೆಂಗಿನಕಾಯಿ (tenginakaayi)</li>
+                        <li>Sanskrit: नारिकेल (narikela)</li>
+                        <li> Gujarati: નારિયેળ (nariyel)</li>
+                        <li> Tamil: தேங்காய் (thengai)</li>
+                        <li> Punjabi: ਨਾਰੀਅਲ (narial)</li>
+                        <li>Telugu: కొబ్బరికాయ (kobbarikaaya)</li>
+                        <li> Oriya: ନଡିଆ (nadiya)</li>
+
+                        
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Scientific Classification</h3>
+                    <ul class="uses-list">
+                        <li><strong>Kingdom:</strong> Plantae</li>
+                        <li><strong>Clade:</strong> Tracheophytes</li>
+                        <li><strong>Clade:</strong> Angiosperms</li>
+                        <li><strong>Clade:</strong> Monocots</li>
+                        <li><strong>Clade:</strong> Commelinids</li>
+                        <li><strong>Order:</strong> Arecales</li>
+                        <li><strong>Family:</strong> Arecaceae</li>
+                        <li><strong>Genus:</strong> Cocos</li>
+                        <li><strong>Species:</strong> C. nucifera</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Did You Know?</h3>
+                <p>The coconut palm is so important in many cultures that it's called "The Tree of Life" in the Philippines and "Kalpavriksha" (the wish-fulfilling tree) in India. Every part of the coconut tree can be used for something valuable, making it one of the most useful trees in the world.</p>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2>Benefits & Uses</h2>
+            <p>The coconut provides food, fuel, cosmetics, building materials, and more. Here are some of its remarkable benefits and uses:</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Nutritional Powerhouse</h3>
+                    <ul class="uses-list">
+                        <li>Rich in medium-chain triglycerides (MCTs)</li>
+                        <li>High in fiber (9% in 100g)</li>
+                        <li>Contains manganese, copper, selenium</li>
+                        <li>Source of iron, phosphorus, zinc</li>
+                        <li>Provides vitamins C, E, B1, B3, B5, B6</li>
+                        <li>Electrolyte-rich water (potassium, sodium)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Health Benefits</h3>
+                    <ul class="uses-list">
+                        <li>Boosts heart health</li>
+                        <li>Promotes blood sugar control</li>
+                        <li>Contains powerful antioxidants</li>
+                        <li>Easy to digest energy source</li>
+                        <li>Supports immune function</li>
+                        <li>May help with weight management</li>
+                        <li>Antibacterial and antiviral properties</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Culinary Uses</h3>
+                    <ul class="uses-list">
+                        <li>Coconut oil for cooking</li>
+                        <li>Coconut milk in curries</li>
+                        <li>Coconut water as sports drink</li>
+                        <li>Desiccated coconut in baking</li>
+                        <li>Coconut flour (gluten-free)</li>
+                        <li>Coconut sugar alternative</li>
+                        <li>Coconut vinegar</li>
+                        <li>Toddy (fermented sap)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Beauty & Personal Care</h3>
+                    <ul class="uses-list">
+                        <li>Coconut oil for skin/hair</li>
+                        <li>Natural moisturizer</li>
+                        <li>Makeup remover</li>
+                        <li>Lip balm</li>
+                        <li>Massage oil</li>
+                        <li>Oil pulling for oral health</li>
+                        <li>Soap and shampoo base</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Industrial & Household</h3>
+                    <ul class="uses-list">
+                        <li>Coir fiber for ropes/mats</li>
+                        <li>Shells for charcoal/utensils</li>
+                        <li>Husks for brushes/mattresses</li>
+                        <li>Leaves for thatching/baskets</li>
+                        <li>Trunk wood for construction</li>
+                        <li>Biofuel production</li>
+                        <li>Water filtration (shell charcoal)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Traditional Medicine</h3>
+                    <ul class="uses-list">
+                        <li>Ayurvedic treatments</li>
+                        <li>Wound healing</li>
+                        <li>Digestive aid</li>
+                        <li>Fever reducer</li>
+                        <li>Urinary tract health</li>
+                        <li>Parasite treatment</li>
+                        <li>Energy tonic</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://www.tastingtable.com/img/gallery/11-creative-ways-to-use-a-whole-coconut/l-intro-1669128426.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.themancompany.com/cdn/shop/articles/shutterstock_1450760213-2_1.webp?v=1684322101" alt="Coconut oil">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://thanhcongcraft.com/wp-content/uploads/2025/01/Coconut-Products-1200x857.png" alt="Coconut crafts">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Coconut Wisdom</div>
+            <p>"The coconut palm is the most naturally widespread fruit plant on Earth, growing in more than 80 countries."</p>
+            <p>&copy; 2025 Coconut Information Center. All rights reserved.</p>
+            <p> By- Anvita Sanjay Sadegaonkar</p>
+        </div>
+    </footer>
+</body>
+</html>
